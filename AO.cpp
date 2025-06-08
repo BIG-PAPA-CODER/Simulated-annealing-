@@ -175,7 +175,7 @@ int main() {
 
         int runId = 0;
 
-        // 1️⃣ Test różnych liczby iteracji (przy stałej temperaturze i chłodzeniu)
+        // Test różnych liczby iteracji (przy stałej temperaturze i chłodzeniu)
         std::vector<int> iterationsSet = { 100, 150, 200, 300, 500 };
         for (int iter : iterationsSet) {
             for (int i = 0; i < 100; ++i) {
@@ -190,7 +190,7 @@ int main() {
             }
         }
 
-        // 2️⃣ Test różnych temperatur początkowych (przy stałej liczbie iteracji i chłodzeniu)
+        // Test różnych temperatur początkowych (przy stałej liczbie iteracji i chłodzeniu)
         std::vector<double> tempStarts = { 10.0, 50.0, 100.0, 200.0, 500.0 };
         int fixedIterations = 300;
         for (double tempStart : tempStarts) {
@@ -205,7 +205,7 @@ int main() {
             }
         }
 
-        // 3️⃣ Test różnych współczynników chłodzenia (przy stałej liczbie iteracji i temperaturze)
+        // Test różnych współczynników chłodzenia (przy stałej liczbie iteracji i temperaturze)
         std::vector<double> coolingRates = { 0.999, 0.995, 0.99, 0.98, 0.95 };
         double fixedTemp = 100.0;
         for (double cooling : coolingRates) {
