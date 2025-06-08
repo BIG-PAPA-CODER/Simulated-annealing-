@@ -27,7 +27,7 @@ Zaimplementowano zmodyfikowany algorytm **Simulated Annealing** z:
 Wymagany kompilator C++11 lub nowszy. Kompilacja przykładowo:
 
 ```bash
-g++ -std=c++11 -o knapsack_solver main.cpp
+g++ -std=c++11 -o AO AO.cpp
 ```
 
 ## Uruchomienie
@@ -35,7 +35,7 @@ g++ -std=c++11 -o knapsack_solver main.cpp
 Domyślnie program uruchamia pojedyncze wykonanie z domyślnymi parametrami:
 
 ```bash
-./knapsack_solver
+./AO
 ```
 
 Plik `wyniki.csv` zostanie utworzony z zapisem:
@@ -86,7 +86,7 @@ struct Problem {
 };
 ```
 
-## 🧪 Dane przykładowe
+## Dane przykładowe
 
 ```cpp
 Problem problem = {
@@ -99,13 +99,13 @@ Problem problem = {
 };
 ```
 
-## 📈 Pliki wyjściowe
+## Pliki wyjściowe
 
 - `wyniki.csv`: historia wyników i temperatur dla pojedynczego uruchomienia.
 - `benchmark_wyniki.csv`: dane z wielu uruchomień dla różnych parametrów.
 
 Można je analizować w arkuszach kalkulacyjnych lub np. za pomocą Pythona (pandas/matplotlib).
 
-## 📃 Licencja
+## Licencja
 
 Projekt edukacyjny. Można dowolnie modyfikować i wykorzystywać.
